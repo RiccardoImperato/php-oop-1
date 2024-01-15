@@ -12,6 +12,7 @@ class Movie
      *
      * @param  string $title
      * @param  int $year
+     * @param  string $genre
      * @return void
      */
     function __construct($title, $year, $genre)
