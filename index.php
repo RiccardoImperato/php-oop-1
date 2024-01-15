@@ -1,5 +1,4 @@
 <?php
-// Inclusione Movie.php
 require_once __DIR__ . '/models/Movie.php';
 require_once __DIR__ . '/models/db.php';
 ?>
@@ -72,6 +71,11 @@ require_once __DIR__ . '/models/db.php';
                 echo $movie_4->getTitle();
                 ?>
             </h3>
+            <p>
+                <?php
+                echo "Anno:" . " " . $movie_4->getYear();
+                ?>
+            </p>
             <p>
                 <?php
                 echo "Generi:" . " " . implode(", ", $movie_4->getGenres());

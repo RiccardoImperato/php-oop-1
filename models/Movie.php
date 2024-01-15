@@ -12,7 +12,7 @@ class Movie
      *
      * @param  string $title
      * @param  int $year
-     * @param  string $genre
+     * @param  array $genres
      * @return void
      */
     function __construct($title, $year, $genres)
@@ -33,7 +33,7 @@ class Movie
     }
 
     /**
-     * getyear: funzione per ottenere anno 
+     * getYear: funzione per ottenere anno 
      *
      * @return int
      */
@@ -43,7 +43,7 @@ class Movie
     }
 
     /**
-     * getyear: funzione per ottenere gerere 
+     * getGenres: funzione per ottenere generi 
      *
      * @return array
      */
