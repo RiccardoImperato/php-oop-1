@@ -6,20 +6,34 @@ class Movie
     public $title;
     public $year;
 
-    // Costruttore 
+    /**
+     * __construct
+     *
+     * @param  string $title
+     * @param  int $year
+     * @return void
+     */
     function __construct($title, $year)
     {
         $this->title = $title;
         $this->year = $year;
     }
 
-    // Metodo per ottenere titolo 
+    /**
+     * getTitle: funzione per ottenere titolo
+     *
+     * @return string
+     */
     public function getTitle()
     {
         return $this->title;
     }
 
-    // Metodo per ottenere anno 
+    /**
+     * getyear: funzione per ottenere anno 
+     *
+     * @return int
+     */
     public function getyear()
     {
         return $this->year;
