@@ -10,4 +10,5 @@ In un file index.php è definita una classe Movie con al suo interno:
 - Metodo per ottenere l'anno del film
 - Oggetti $movie_n istanziati 
 
-I valori della relative proprietà degli oggetti istanziati vengono poi stampati a schermo con un echo, all'interno di una lista. 
+I valori della relative proprietà degli oggetti istanziati vengono poi stampati a schermo con un echo, all'interno di una lista.
+Per il titolo e l'anno di uscita viene richiamata una funzione che restituisce il valore sotto forma di stringa, mentre per stampare i generi, salvati in un array, ho utilizzato il metodo implode che restituisce gli elementi di un array sotto forma di stringa.
