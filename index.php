@@ -28,7 +28,7 @@ require_once __DIR__ . '/models/db.php';
             </p>
             <p>
                 <?php
-                echo "Genere:" . " " . $movie_1->getGenre();
+                echo "Generi:" . " " . implode(", ", $movie_1->getGenres());
                 ?>
             </p>
         </li>
@@ -45,7 +45,7 @@ require_once __DIR__ . '/models/db.php';
             </p>
             <p>
                 <?php
-                echo "Genere:" . " " . $movie_2->getGenre();
+                echo "Generi:" . " " . implode(", ", $movie_2->getGenres());
                 ?>
             </p>
         </li>
@@ -62,7 +62,7 @@ require_once __DIR__ . '/models/db.php';
             </p>
             <p>
                 <?php
-                echo "Genere:" . " " . $movie_3->getGenre();
+                echo "Generi:" . " " . implode(", ", $movie_3->getGenres());
                 ?>
             </p>
         </li>
@@ -74,12 +74,7 @@ require_once __DIR__ . '/models/db.php';
             </h3>
             <p>
                 <?php
-                echo "Anno:" . " " . $movie_4->getYear();
-                ?>
-            </p>
-            <p>
-                <?php
-                echo "Genere:" . " " . $movie_4->getGenre();
+                echo "Generi:" . " " . implode(", ", $movie_4->getGenres());
                 ?>
             </p>
         </li>

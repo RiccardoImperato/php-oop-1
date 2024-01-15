@@ -5,7 +5,7 @@ class Movie
     // Varibili di istanza 
     public $title;
     public $year;
-    public $genre;
+    public $genres;
 
     /**
      * __construct
@@ -15,10 +15,10 @@ class Movie
      * @param  string $genre
      * @return void
      */
-    function __construct($title, $year, $genre)
+    function __construct($title, $year, $genres)
     {
         $this->title = $title;
-        $this->genre = $genre;
+        $this->genres = $genres;
         $this->year = $year;
     }
 
@@ -47,8 +47,8 @@ class Movie
      *
      * @return array
      */
-    public function getGenre()
+    public function getGenres()
     {
-        return $this->genre;
+        return $this->genres;
     }
 }
