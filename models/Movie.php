@@ -15,11 +15,11 @@ class Movie
      * @param  array $genres
      * @return void
      */
-    function __construct($title, $year, $genres)
+    function __construct($_title, $_year, $_genres)
     {
-        $this->title = $title;
-        $this->genres = $genres;
-        $this->year = $year;
+        $this->title = $_title;
+        $this->genres = $_genres;
+        $this->year = $_year;
     }
 
     /**
@@ -49,6 +49,6 @@ class Movie
      */
     public function getGenres()
     {
-        return $this->genres;
+        return implode(", ", $this->genres);
     }
 }
