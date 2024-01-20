@@ -1,0 +1,40 @@
+[
+    {
+        "image": "https://m.media-amazon.com/images/M/MV5BYTQwZjZlMDAtODMzMy00MzQ0LWI0MjYtYWI5Y2JjNjEwNDFjXkEyXkFqcGdeQXVyNjkzNzQ4MzA@._V1_.jpg",
+        "title": "Fantozzi",
+        "year": 1975,
+        "genres": [
+            "Commedia"
+        ]
+    },
+    {
+        "image": "https://www.sonypictures.it/sites/italy/files/2021-08/DP_3521476_TC_1400x2100_DP_3521480_SpiderManHomecoming_2017_2000x3000_UK-min.jpg",
+        "title": "Spider-man Homecoming",
+        "year": 2017,
+        "genres": [
+            "Azione",
+            "Avventura",
+            "Fantascienza",
+            "Dramma"
+        ]
+    },
+    {
+        "image": "https://pad.mymovies.it/filmclub/2022/03/108/locandinapg1.jpg",
+        "title": "Napoleon",
+        "year": 2023,
+        "genres": [
+            "Storia",
+            "Guerra",
+            "Dramma"
+        ]
+    },
+    {
+        "image": "https://i0.wp.com/www.unmillimetro.com/wp-content/uploads/2020/11/maxw-824-scaled.jpg?fit=683%2C1024&ssl=1",
+        "title": "Le ali della libertà",
+        "year": 1994,
+        "genres": [
+            "Drammatico",
+            "Crime"
+        ]
+    }
+]

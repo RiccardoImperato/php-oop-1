@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/models/Movie.php';
-require_once __DIR__ . '/models/db.php';
+require_once __DIR__ . '/Models/Movie.php';
+require_once __DIR__ . '/Database/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,78 +18,21 @@ require_once __DIR__ . '/models/db.php';
 <body>
     <div class="container py-5 text-center">
         <h1 class="my-5">PHP Movie</h1>
-        <ul class="row list-unstyled m-0">
-            <li class="col py-3 text-center">
-                <h3>
-                    <?php
-                    echo $movie_1->getTitle();
-                    ?>
-                </h3>
-                <p>
-                    <?php
-                    echo $movie_1->getYear();
-                    ?>
-                </p>
-                <p>
-                    <?php
-                    echo $movie_1->getGenres();
-                    ?>
-                </p>
-            </li>
-            <li class="col py-3 text-center">
-                <h3>
-                    <?php
-                    echo $movie_2->getTitle();
-                    ?>
-                </h3>
-                <p>
-                    <?php
-                    echo $movie_2->getYear();
-                    ?>
-                </p>
-                <p>
-                    <?php
-                    echo $movie_2->getGenres();
-                    ?>
-                </p>
-            </li>
-            <li class="col py-3 text-center">
-                <h3>
-                    <?php
-                    echo $movie_3->getTitle();
-                    ?>
-                </h3>
-                <p>
-                    <?php
-                    echo $movie_3->getYear();
-                    ?>
-                </p>
-                <p>
-                    <?php
-                    echo $movie_3->getGenres();
-                    ?>
-                </p>
-            </li>
-            <li class="col py-3 text-center">
-                <h3>
-                    <?php
-                    echo $movie_4->getTitle();
-                    ?>
-                </h3>
-                <p>
-                    <?php
-                    echo $movie_4->getYear();
-                    ?>
-                </p>
-                <p>
-                    <?php
-                    echo $movie_4->getGenres();
-                    ?>
-                </p>
-            </li>
+        <ul class="list-unstyled row row-cols-4 justify-content-center gap-4">
+            <?php foreach ($movies as $movie) : ?>
+                <li class="card p-0" style="width: 18rem;">
+                    <img class="card-img-top" src="<?php echo $movie->getImage() ?>" alt="<?php echo $movie->getTitle() ?>">
+                    <h3 class="card-title mt-3"> <?php echo $movie->getTitle(); ?></h3>
+                    <div class="card-text mb-3">
+                        <?php echo $movie->getYear(); ?>
+                    </div>
+                    <div class="card-text mb-4">
+                        <?php echo $movie->getGenres(); ?>
+                    </div>
+                </li>
+            <?php endforeach ?>
         </ul>
     </div>
-
 </body>
 
 </html>

@@ -2,6 +2,16 @@
 
 body {
     color: #fff;
+    background-color: #070707;
+}
+
+img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card {
+    color: #fff;
     background-color: #222;
 }
 
